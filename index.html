@@ -30,7 +30,7 @@
     </header>
     <main>
       <div class="container card">
-        <ul>
+        <ul id="todoList">
           <li><input type="checkbox" /> Buy Cat Food</li>
           <li><input type="checkbox" /> Buy Cat Food</li>
           <li><input type="checkbox" /> Buy Cat Food</li>
@@ -48,15 +48,15 @@
     <div class="overlay">
       <div class="modal card">
         <label for="todoItem">Add a Task</label>
-        <input
-          type="text"
-          placeholder="Add a task"
-          name="todoItem"
-          id="todoItem"
-        />
-        <button class="add-todo add-todo--modal add-todo--modal-active">
-          +
-        </button>
+        <form>
+          <input
+            type="text"
+            placeholder="Add a task"
+            name="todoItem"
+            id="todoItem"
+          />
+          <input type="submit" value="+" class="add-todo add-todo--modal" />
+        </form>
       </div>
     </div>
 
